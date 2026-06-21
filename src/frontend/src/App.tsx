@@ -38,8 +38,6 @@ import ComputeForceDirectedLayout
 import ComputeRadialLayout from './Pages/Project/Compute/TreeView/ComputeRadialLayout/ComputeRadialLayout'
 import ComputeRectangularLayout
     from './Pages/Project/Compute/TreeView/ComputeRectangularLayout/ComputeRectangularLayout'
-import DendogramTree from './Pages/Project/Tree/Dendogram/DendogramTree'
-import TreeViewUPGMAPage from './Pages/Project/Tree/Dendogram/TreeViewUPGMAPage'
 import HOME = WebUiUris.HOME;
 import ABOUT = WebUiUris.ABOUT;
 import NEWS = WebUiUris.NEWS;
@@ -169,10 +167,6 @@ export default function App() {
                             <Route
                                 path={COMPUTE_GOEBURST_FULL_MST}
                                 element={<ProtectedRoute><GoeBURSTFullMSTConfig/></ProtectedRoute>}
-                            />
-                            <Route
-                                path={COMPUTE_UPGMA}
-                                element={<ProtectedRoute><TreeViewUPGMAPage/></ProtectedRoute>}
                             />
                             <Route
                                 path={COMPUTE_HIERARCHICAL_CLUSTERING}

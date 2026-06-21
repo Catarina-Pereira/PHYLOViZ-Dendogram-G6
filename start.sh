@@ -1,3 +1,8 @@
+cd src/backend || exit
+./gradlew build
+cd ../../ || exit
+
+
 cd src/frontend || exit
 
 npm install

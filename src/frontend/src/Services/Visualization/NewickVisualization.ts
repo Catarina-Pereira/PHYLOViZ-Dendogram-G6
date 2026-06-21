@@ -1,5 +1,5 @@
 import { ParseNewickOutputModel } from "./models/parseNewick/ParseNewickOutputModel";
-import { parseNewick } from "../../Pages/Project/Tree/Dendogram/utils/parseNewick";
+import { parseNewick } from "../../Pages/Project/TreeView/Layouts/Dendogram/utils/parseNewick";
 
 export namespace NewickVisualization {
 

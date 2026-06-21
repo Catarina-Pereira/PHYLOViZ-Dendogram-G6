@@ -11,7 +11,6 @@ import {
 } from "../../../Services/Administration/models/projects/getProject/GetProjectOutputModel";
 import {useEffect, useState} from "react";
 import VisualizationService from "../../../Services/Visualization/VisualizationService";
-import { parseNewick } from "./Dendogram/utils/parseNewick";
 
 /**
  * Hook for Tree page.
@@ -51,15 +50,6 @@ export function useTree() {
     }
 
     const [treeData, setTreeData] = useState<string | null>(null);
-
-     useEffect(() => {
-         VisualizationService.getTree(projectId, datasetId, treeId)
-             .then(tree => {
-                 const parsed = parseNewick(tree);
-            setTreeData(JSON.stringify(parsed, null, 2)); // Mostra o JSON
-            console.log(parsed);
-           })
-     }, [projectId, treeId])
 
     return {
         tree: cascadingInfoTree,
