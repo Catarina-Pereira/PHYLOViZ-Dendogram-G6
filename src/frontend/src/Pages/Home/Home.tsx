@@ -25,8 +25,10 @@ export function Home() {
                 justifyContent: "space-between",
                 width: "100%"
             }}>
-                {loggedIn ? <NewProjectCard/> : <GetStartedCard/>}
-                {loggedIn ? <OpenProjectCard/> : <SignUpCard/>}
+                {/* {loggedIn ? <NewProjectCard/> : <GetStartedCard/>}
+                {loggedIn ? <OpenProjectCard/> : <SignUpCard/>} */}
+                 {<NewProjectCard/> }
+                { <OpenProjectCard/> } 
             </Box>
         </Container>
     )

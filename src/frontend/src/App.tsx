@@ -86,10 +86,10 @@ export default function App() {
      * @param children the children to render
      */
     function ProtectedRoute({children}: { children: React.ReactElement }) {
-        if (!loggedIn) {
-            window.location.href = WebUiUris.LOGIN
-            return null
-        }
+        // if (!loggedIn) {
+        //     window.location.href = WebUiUris.LOGIN
+        //     return null
+        // }
 
         return children
     }
